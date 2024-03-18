@@ -6,25 +6,12 @@ public class InOrder {
 
 public static void main(String[] args) {
 
-	int current = (int) (Math.random() * 10);
-	int next;
-	int temp;
-	System.out.print(current);
-
+	int rnd = (int) (10 * math.random());
+	int prev = rnd;
 	do {
-		next = (int) (Math.random() * 10);
-		if (next > current) {
-			
-			System.out.print(" " +next);
-			temp= current;
-			current=next;
-			next= temp;
-			
-			
-			
-	}
-}
-	while (next<current);
-
+		system.out.print(prev + " ");
+		rnd = (int) (10 * math.random());
+	} while (rnd >= prev);
+	system.out.println()
 }
 }
